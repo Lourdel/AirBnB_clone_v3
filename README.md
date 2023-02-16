@@ -158,6 +158,5 @@ No known bugs at this time.
 * Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
 * Lourdel Kigudde - [Github](https://github.com/lourdel)
 * Najjib Abdallah Mutyaba - [Github](https://github.com/Najjibcode)
-* Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
