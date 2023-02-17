@@ -71,6 +71,10 @@ class DBStorage:
         Session = scoped_session(sess_factory)
         self.__session = Session
 
+    def close(self):
+        """call remove() method on the private session attribute"""
+        self.__session.remove()
+
     def get(self, cls, id):
         """method to retrieve one object from the database"""
         objt = self.__session.query(cls).filter_by(id=id).first()
@@ -88,7 +92,3 @@ class DBStorage:
             for model in classes.values():
                 counts += self.__session.query(model).count()
         return counts
-
-    def close(self):
-        """call remove() method on the private session attribute"""
-        self.__session.remove()
